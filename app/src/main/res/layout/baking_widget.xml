@@ -1,0 +1,32 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background_transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/widget_logo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/video_intro_title_background_tablet"
+        android:contentDescription="@string/bake_bake"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/logotxt" />
+
+    <ListView
+        android:id="@+id/widget_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/pinkTransparent"
+        android:paddingBottom="16dp" />
+</LinearLayout>
+
+
+

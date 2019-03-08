@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EC707A</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#d81b60</color>
+
+
+    <!-- project colours -->
+    <color name="white">#ffffff</color>
+    <color name="lightBrown">#ffe8dc</color>
+    <color name="mediumBrown">#c29281</color>
+    <color name="darkBrown">#906454</color>
+    <color name="yellow">#fda72c</color>
+    <color name="orange">#f38758</color>
+    <color name="pink">#ec707a</color>
+    <color name="darkBrownTransparent">#aa906454</color>
+    <color name="mediumBrownTransparent">#aac29281</color>
+    <color name="pinkTransparent">#CCec707a</color>
+</resources>

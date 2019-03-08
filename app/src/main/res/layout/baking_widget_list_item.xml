@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recipe_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/widget_recipe_name_background"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Nutella Pie" />
+
+    <TextView
+        android:id="@+id/recipe_ingredients_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/steps_list_ingredients_list_background"
+        android:paddingStart="30dp"
+        android:paddingTop="60dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="30dp"
+        android:textColor="@color/darkBrown"
+        tools:text="this is where the ingredients list will go" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/recipe_name_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/steps_list_ingredients_background"
+        android:fontFamily="serif"
+        android:gravity="top|center_horizontal"
+        android:text="@string/ingredients"
+        android:textAlignment="center"
+        android:textColor="@color/lightBrown"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/portions_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pt_serif_web_italic"
+        android:gravity="center"
+        android:textColor="@color/lightBrown"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        tools:text="for 8 portions" />
+
+</RelativeLayout>

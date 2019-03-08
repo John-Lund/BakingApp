@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Bake Bake</string>
+    <string name="device_type" translatable="false">Phone</string>
+    <string name="orientation" translatable="false">Portrait</string>
+    <string name="portions">for %1$s portions</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="scroll_up_to_see_recipe_list">scroll up to see recipe list</string>
+    <string name="bake_bake">Bake Bake</string>
+    <string name="internet_warning">You currently have no internet connection. Bake Bake will not function correctly until your connection is restored.</string>
+    <string name="ok">OK</string>
+    <string name="close_this_warning">close this warning</string>
+    <string name="go_to_videos">go to videos</string>
+    <string name="recipe_introduction">Recipe Introduction</string>
+    <string name="let_s">let\'s</string>
+    <string name="a">a</string>
+    <string name="go_to_next_step">go to next step</string>
+    <string name="go_to_previous_step">go to previous step</string>
+    <string name="go_back_to_recipe_introduction">go back to recipe introduction</string>
+    <string name="back_to_recipe_introduction">Back to Recipe Introduction</string>
+    <string name="go_to_introduction">go to introduction</string>
+    <string name="happy_baking">Happy Baking!</string>
+    <string name="internet_warning_toast">Bake Bake won\'t function correctly until your internet connection is restored.</string>
+</resources>

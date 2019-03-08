@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VideoFragment">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exoplayer_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:controller_layout_id="@layout/exoplayer_ui"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:show_timeout="2000" />
+
+        <TextView
+            android:id="@+id/details_video_instructions"
+            android:layout_width="51dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="204dp"
+            android:layout_marginTop="212dp"
+            android:background="@android:color/holo_orange_light"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exoplayer_view" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/exoplayer_view"
+            app:layout_constraintEnd_toEndOf="@+id/exoplayer_view"
+            app:layout_constraintStart_toStartOf="@+id/exoplayer_view"
+            app:layout_constraintTop_toTopOf="@+id/exoplayer_view" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

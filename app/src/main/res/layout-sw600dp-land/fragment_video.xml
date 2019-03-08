@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".VideoFragment">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pink">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/exoplayer_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:visibility="visible"
+                app:controller_layout_id="@layout/exoplayer_ui"
+                app:layout_constraintDimensionRatio="1.7:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:resize_mode="zoom"
+                app:show_timeout="2000">
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/exoplayer_view"
+                app:layout_constraintEnd_toEndOf="@+id/exoplayer_view"
+                app:layout_constraintStart_toStartOf="@+id/exoplayer_view"
+                app:layout_constraintTop_toTopOf="@+id/exoplayer_view" />
+
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/video_fragment_thumbnail_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_constraintDimensionRatio="1.7:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/no_video_placeholder" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="@color/lightBrown"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/exoplayer_view"
+                app:layout_constraintVertical_bias="1.0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/video_intro_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/video_intro_title_background_tablet"
+                        android:fontFamily="@font/pt_serif_web_bold"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="32dp"
+                        android:paddingTop="32dp"
+                        android:paddingEnd="32dp"
+                        android:paddingBottom="16dp"
+                        android:text="@string/recipe_introduction"
+                        android:textColor="@color/mediumBrown"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/pt_serif_web_bold"
+                        android:includeFontPadding="false"
+                        android:text="@string/let_s"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/pt_serif_web_bold"
+                        android:includeFontPadding="false"
+                        android:text="@string/a"
+                        android:textColor="@color/darkBrown"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="@string/bake_bake"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        app:srcCompat="@drawable/svg_bakebake_twocolours" />
+
+                    <TextView
+                        android:id="@+id/video_intro_view_recipe_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/pt_serif_web_bold"
+                        android:textColor="@color/orange"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        tools:text="Nutella Pie" />
+
+                    <ImageButton
+                        android:id="@+id/video_intro_view_next_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="32dp"
+                        android:background="@drawable/svg_forward_orange"
+                        android:contentDescription="@string/go_to_next_step"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/video_intro_view_recipe_title" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/video_main_steps_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/video_main_steps_instructions_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="80dp"
+                        android:background="@drawable/main_activity_list_item_landscape_background"
+                        android:fontFamily="@font/opensans_regular"
+                        android:paddingStart="50dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="50dp"
+                        android:paddingBottom="70dp"
+                        android:textColor="@color/darkBrown"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/video_main_steps_title_text_view"
+                        tools:text="Preheat the oven to 350 F. Butter a 9 inch deep dish pie pan and stick it in the oven to warm up a bit" />
+
+                    <TextView
+                        android:id="@+id/video_main_steps_number_text_view"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/video_view_step_indicator_background"
+                        android:fontFamily="@font/pt_serif_web_bolditalic"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:textSize="32sp"
+                        app:layout_constraintEnd_toEndOf="@+id/video_main_steps_title_text_view"
+                        app:layout_constraintStart_toStartOf="@+id/video_main_steps_title_text_view"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="1" />
+
+                    <TextView
+                        android:id="@+id/video_main_steps_title_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:fontFamily="@font/pt_serif_web_bolditalic"
+                        android:includeFontPadding="false"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/mediumBrown"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/video_main_steps_number_text_view"
+                        tools:text="Starting prep" />
+
+                    <ImageButton
+                        android:id="@+id/video_mian_steps_forward_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/svg_forward_orange"
+                        android:contentDescription="@string/go_to_next_step"
+                        app:layout_constraintBottom_toBottomOf="@+id/video_main_steps_number_text_view"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/video_main_steps_number_text_view"
+                        app:layout_constraintTop_toTopOf="@+id/video_main_steps_number_text_view" />
+
+                    <ImageButton
+                        android:id="@+id/video_main_steps_backward_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/svg_back_orange"
+                        android:contentDescription="@string/go_to_previous_step"
+                        app:layout_constraintBottom_toBottomOf="@+id/video_main_steps_number_text_view"
+                        app:layout_constraintEnd_toStartOf="@+id/video_main_steps_number_text_view"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/video_main_steps_number_text_view" />
+
+                    <ImageButton
+                        android:id="@+id/video_main_tablet_home_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="60dp"
+                        android:background="@color/lightBrown"
+                        android:contentDescription="@string/go_back_to_recipe_introduction"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView8"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="@+id/video_main_steps_instructions_text_view"
+                        app:layout_constraintTop_toBottomOf="@+id/video_main_steps_instructions_text_view"
+                        app:srcCompat="@drawable/svg_fastforward_brown" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/pt_serif_web_bolditalic"
+                        android:includeFontPadding="false"
+                        android:text="@string/back_to_recipe_introduction"
+                        android:textColor="@color/mediumBrown"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/video_main_tablet_home_button"
+                        app:layout_constraintEnd_toEndOf="@+id/video_main_steps_instructions_text_view"
+                        app:layout_constraintStart_toEndOf="@+id/video_main_tablet_home_button"
+                        app:layout_constraintTop_toTopOf="@+id/video_main_tablet_home_button"
+                        app:layout_constraintVertical_bias="0.516" />
+
+                </android.support.constraint.ConstraintLayout>
+            </FrameLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

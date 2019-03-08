@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/frame1_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame2_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame3_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame4_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame5_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame6_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame7_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame8_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame9_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame10_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame11_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame12_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame13_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame14_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame15_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame16_animation" android:duration="@integer/frame_rate_x1" />
+    <item android:drawable="@drawable/frame17_animation" android:duration="@integer/pause" />
+</animation-list>
