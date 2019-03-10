@@ -1,4 +1,20 @@
-# BakingApp
+
+
+# **Baking App**
+
+
+### **Overview**
+
+A project from my Udacity AND course following MVVM architecture.  Baking App downloads json containing recipe
+details from Udacity’s own API. It uses an Exoplayer to display videos, fragments to enable master-detail
+layouts on tablets as well as mobile layouts, a Room data base to store downloaded data, live data, a repository,
+view models, a home screen widget, a broadcast receiver to detect internet connectivity, an audio manager,
+a media session and a rudimentary Espresso test with an idling resource.
+
+If you are a Udacity student and you want to see this app running, you'll need to add the URL for Udacity's json
+by finding the todo I left in there.
+
+### **Sample UI images**
 
 ![image](https://user-images.githubusercontent.com/36385109/54088851-4bd6d980-435a-11e9-85a0-eb196bc6e479.png)
 
@@ -23,7 +39,29 @@
 ![image](https://user-images.githubusercontent.com/36385109/54088924-02d35500-435b-11e9-940f-860d2e740b24.png)
 
 
+### **Licensing**
 
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
 
